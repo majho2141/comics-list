@@ -6,17 +6,24 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Marvel API</title>
 </head>
-<body>
+<body onload="consultaListaApi()">
     <div class="container">
         <div class="header">
             <h2 >Marvel List</h2>
         </div>
         <div class="content">
             <div class="tabla-marvel">
-                <table>
-                    <tr>Nombre</tr>
-                    <tr>Creador</tr>
-                    <tr>Historia</tr>
+                <table id="table-comics">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Creadores</th>
+                            <th>Stories</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
                 </table>
             </div>
         </div>
@@ -24,7 +31,8 @@
             <p>Derechos reservados UAM @2023</p>
         </div>
     </div>
+    <script src="./js/marvel.js"></script>
 </body>
 <!--script -->
-<script src="./js/marvel.js"></script>
+
 </html>
