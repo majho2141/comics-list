@@ -23,13 +23,12 @@ const consultaListaApi = () => {
                 } else {
                     comicCreatorCell.textContent = "Desconocido";
                 }
-
                 const comicStoriesCell = row.insertCell(2);
 
                 for (i=0; i<comics.stories.items.length; i++){
                     comicStoriesCell.textContent = comics.stories.items[i].name
                 }
-        
+      
             });
         })
         .catch((error) => console.log(error));

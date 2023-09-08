@@ -1,5 +1,7 @@
 * {
     margin: 0;
+    padding: 0;
+    display: flex;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
 }
