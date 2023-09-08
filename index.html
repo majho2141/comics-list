@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Marvel API</title>
 </head>
-<body>
+<body onload="consultaListaApi()">
     <div class="container">
         <div class="header">
             <div class="logo">
-                <img src="./logo.png" alt="">
+                <img src="./assets/imagenes/logo.jpg" alt="">
             </div>
             <nav>
                 <ul class="nav-item">
@@ -21,19 +21,27 @@
         </div>
         <div class="content">
             <div class="tabla-marvel">
-                <table>
-                    <tr>Nombre</tr>
-                    <tr>Creador</tr>
-                    <tr>Historia</tr>
+                <table id="table-comics" class="tabla-comics">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Creadores</th>
+                            <th>Stories</th>
+                        </tr>
+                    </thead>
+                    <tbody id="comics-body">
+    
+                    </tbody>
                 </table>
             </div>
         </div>
             <footer class="footer">
-                <a href="http://www.lostejos.com"><img class="imagen-uno" src="./dUno.png" alt="Git hub developer uno" /></a>
-                <a href="http://www.lostejos.com"><img class="imagen-dos" src="./dDos.png" alt="Git hub developer dos" /></a>
+                <a href="https://github.com/majho2141"><img class="imagen-uno" src="./assets/imagenes/dUno.png" alt="Git hub developer uno" /></a>
+                <a href="https://github.com/slesmes"><img class="imagen-dos" src="./assets/imagenes/dDos.png" alt="Git hub developer dos" /></a>
             </footer>
     </div>
+    <script src="./js/marvel.js"></script>
 </body>
 <!--script -->
-<script src="./js/marvel.js"></script>
+
 </html>

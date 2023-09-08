@@ -1,69 +1,73 @@
-*{
-    box-sizing: border-box;
+* {
     margin: 0;
-    padding: 0;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
 }
-body{
-    background-color: rgb(114, 180, 180);
+
+body {
+    background-color: rgb(62 71 71);
 }
-.header{
-    background-color: #a6d6eb;
+
+.header {
+    background-color: #000000;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     height: 85px;
     padding: 2px 5%;
 
 }
 
-.header .logo{
+.header .logo {
     cursor: pointer
 }
-.header .logo img{
-    height: 70px;
+
+.header .logo img {
+    height:40px;
     width: auto;
 }
-.header .logo img:hover{
+
+.header .logo img:hover {
     transform: scale(1.2);
 }
-.header .nav-item{
+
+.header .nav-item {
     list-style: none;
 }
 
-.header .nav-item li{
+.header .nav-item li {
     display: inline-block;
     padding: 0 20px;
-    
 }
 
-.header .nav-item li:hover{
+.header .nav-item li:hover {
     transform: scale(1.1);
+    border-bottom: 2px solid white; /* Agrega una línea blanca debajo del texto al hacer hover */
 }
 
-.header .nav-item a{
+.header .nav-item a {
     font-size: 700;
     color: white;
     text-decoration: none;
 }
 
-.footer{
+
+.footer {
     width: 100%;
-    position: absolute;
-    background-color: #a6d6eb;
+    background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 120px;
+    position: absolute;
+    bottom: 0;
 }
 
-.footer a .imagen-uno{
+.footer a .imagen-uno {
     height: 130px;
     width: auto;
 }
 
-.footer a .imagen-dos{
+.footer a .imagen-dos {
     height: 87px;
     width: auto;
 }
