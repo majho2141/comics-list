@@ -1,5 +1,73 @@
-body {
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     display: flex;
+=======
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+body{
+    background-color: rgb(114, 180, 180);
+}
+.header{
+    background-color: #a6d6eb;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 85px;
+    padding: 2px 5%;
+
+}
+
+.header .logo{
+    cursor: pointer
+}
+.header .logo img{
+    height: 70px;
+    width: auto;
+}
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+.header .nav-item{
+    list-style: none;
+}
+
+.header .nav-item li{
+    display: inline-block;
+    padding: 0 20px;
+    
+}
+
+.header .nav-item li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-item a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.footer{
+    width: 100%;
+    position: absolute;
+    background-color: #a6d6eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.footer a .imagen-uno{
+    height: 130px;
+    width: auto;
+}
+
+.footer a .imagen-dos{
+    height: 87px;
+    width: auto;
+>>>>>>> 32444d43f5a3f53742e3282ec41e8a98911d060b
 }

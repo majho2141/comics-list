@@ -6,25 +6,42 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Marvel API</title>
 </head>
-<body>
+<body onload="consultaListaApi()">
     <div class="container">
         <div class="header">
-            <h2 >Marvel List</h2>
+            <div class="logo">
+                <img src="./logo.png" alt="">
+            </div>
+            <nav>
+                <ul class="nav-item">
+                    <li class="uno"><a href="">API 1</a></li>
+                    <li class="dos"><a href="">API 2</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="content">
             <div class="tabla-marvel">
-                <table>
-                    <tr>Nombre</tr>
-                    <tr>Creador</tr>
-                    <tr>Historia</tr>
+                <table id="table-comics">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Creadores</th>
+                            <th>Stories</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
                 </table>
             </div>
         </div>
-        <div class="footer">
-            <p>Derechos reservados UAM @2023</p>
-        </div>
+            <footer class="footer">
+                <a href="http://www.lostejos.com"><img class="imagen-uno" src="./dUno.png" alt="Git hub developer uno" /></a>
+                <a href="http://www.lostejos.com"><img class="imagen-dos" src="./dDos.png" alt="Git hub developer dos" /></a>
+            </footer>
     </div>
+    <script src="./js/marvel.js"></script>
 </body>
 <!--script -->
-<script src="./js/marvel.js"></script>
+
 </html>
