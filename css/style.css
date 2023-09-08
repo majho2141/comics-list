@@ -76,7 +76,9 @@ body {
 
 .tabla-comics {
     border-collapse: collapse;
-    margin: 35px;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tabla-comics th, .tabla-comics td {

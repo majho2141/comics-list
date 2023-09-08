@@ -17,25 +17,18 @@ const consultaListaApi = () => {
 
                 const comicCreatorCell = row.insertCell(1);
                 if (comics.creators.items[0]) {
-                    comicCreatorCell.textContent = comics.creators.items[0].name;
+                    for (i=0; i<comics.creators.items.length; i++){
+                        comicCreatorCell.textContent = comics.creators.items[i].name
+                    }
                 } else {
                     comicCreatorCell.textContent = "Desconocido";
                 }
+                const comicStoriesCell = row.insertCell(2);
 
-            console.log(marvelList)
-            const container_name = document.getElementById("nombre-comic");
-            marvelList.forEach((comics)=>{
-            const comic_name = document.createElement("tr")
-            comic_name.textContent = comics.title
-            container_name.appendChild(comic_name)
-            });
-            const container_creator = document.getElementById("creador-comic");
-            marvelList.forEach((comics)=>{
-                if(comics.creators.items[1] != null && comics.creators.items[1] != undefined){
-                    const comic_creator = document.createElement("tr")
-                    comic_creator.textContent = comics.creators.items[1].name
-                    container_creator.appendChild(comic_creator)
+                for (i=0; i<comics.stories.items.length; i++){
+                    comicStoriesCell.textContent = comics.stories.items[i].name
                 }
+      
             });
         })
         .catch((error) => console.log(error));
