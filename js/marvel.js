@@ -22,6 +22,20 @@ const consultaListaApi = () => {
                     comicCreatorCell.textContent = "Desconocido";
                 }
 
+            console.log(marvelList)
+            const container_name = document.getElementById("nombre-comic");
+            marvelList.forEach((comics)=>{
+            const comic_name = document.createElement("tr")
+            comic_name.textContent = comics.title
+            container_name.appendChild(comic_name)
+            });
+            const container_creator = document.getElementById("creador-comic");
+            marvelList.forEach((comics)=>{
+                if(comics.creators.items[1] != null && comics.creators.items[1] != undefined){
+                    const comic_creator = document.createElement("tr")
+                    comic_creator.textContent = comics.creators.items[1].name
+                    container_creator.appendChild(comic_creator)
+                }
             });
         })
         .catch((error) => console.log(error));
