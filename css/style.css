@@ -71,3 +71,22 @@ body {
     height: 87px;
     width: auto;
 }
+
+.tabla-comics {
+    border-collapse: collapse;
+    margin: 35px;
+}
+
+.tabla-comics th, .tabla-comics td {
+    border: 3px solid #000000;
+    padding: 5px;
+}
+
+.tabla-comics tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabla-comics th {
+    background-color: #8f0606;
+    color: white;
+}
